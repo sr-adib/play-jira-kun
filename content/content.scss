@@ -1,0 +1,9 @@
+html {
+  user-select: none;
+}
+
+.lukis-child {
+  position: absolute;
+  z-index: 99999;
+  background-color: black;
+}

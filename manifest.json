@@ -1,0 +1,18 @@
+{
+  "name": "Jira-kun",
+  "description": "A browser extension assisting you in Jira",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "icons": { "128": "icon_128.png" },
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://sr-adib.atlassian.net/*"],
+      "css": ["content/content.css"],
+      "js": ["content/content.js"]
+    }
+  ]
+}
